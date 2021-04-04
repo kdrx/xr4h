@@ -1,1 +1,1 @@
-web: ./bin/test
+web: ./bin/xray run -config stdin: <<< "{\"inbounds\":[{\"port\":\"env:PORT\",\"protocol\":\"vmess\",\"settings\":{\"clients\":[{\"id\":\"$UUID\"}]},\"streamSettings\":{\"network\":\"ws\",\"wsSettings\":{\"path\":\"$WSPATH\"}}}],\"outbounds\":[{\"protocol\":\"freedom\"}]}"

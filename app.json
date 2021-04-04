@@ -1,0 +1,21 @@
+{
+  "name": "XRAY",
+  "description": "Deploy XRAY on Heroku.",
+  "keywords": ["xray"],
+  "env": {
+    "UUID": {
+      "description": "XRAY UUID",
+      "value": "ce7ea10b-5b27-49ab-a93d-6b184df9cce9"
+    },
+    "WSPATH": {
+      "description": "WebSocket Path",
+      "value": "/path"
+    }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/ryandotsmith/null-buildpack"
+  }],
+  "website": "https://github.com/kdrx/xr4h",
+  "repository": "https://github.com/kdrx/xr4h",
+  "stack": "heroku-20"
+}
